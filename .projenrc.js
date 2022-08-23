@@ -4,9 +4,19 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   name: 'cdk-lambda-deploy',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    'esbuild',
+    'esbuild-runner',
+    'fs-extra',
+    'execa@^4',
+  ],
+
+  devDeps: [
+    '@types/fs-extra',
+    '@wheatstalk/aws-cdk-exec',
+  ],
+
+  lambdaAutoDiscover: false,
 });
+
 project.synth();

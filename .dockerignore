@@ -1,0 +1,6 @@
+/node_modules
+/cdk.out
+/lib
+/cdk.json
+/coverage
+/test-reports

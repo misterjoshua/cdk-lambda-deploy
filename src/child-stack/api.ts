@@ -1,0 +1,1 @@
+export const ENV_GREETING = 'GREETING';

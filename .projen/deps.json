@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@types/fs-extra",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -17,6 +21,10 @@
     {
       "name": "@typescript-eslint/parser",
       "version": "^5",
+      "type": "build"
+    },
+    {
+      "name": "@wheatstalk/aws-cdk-exec",
       "type": "build"
     },
     {
@@ -87,6 +95,23 @@
     {
       "name": "constructs",
       "version": "^10.0.5",
+      "type": "runtime"
+    },
+    {
+      "name": "esbuild",
+      "type": "runtime"
+    },
+    {
+      "name": "esbuild-runner",
+      "type": "runtime"
+    },
+    {
+      "name": "execa",
+      "version": "^4",
+      "type": "runtime"
+    },
+    {
+      "name": "fs-extra",
       "type": "runtime"
     }
   ],
